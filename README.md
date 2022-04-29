@@ -1,2 +1,2 @@
-# SvelteKit Starter
-A SvelteKit starting point
+# Coinbot VPS
+Dedicated VPS for your crypto trading bot
