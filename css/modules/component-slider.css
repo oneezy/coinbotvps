@@ -1,0 +1,71 @@
+/* 
+
+Reference
+***************************************
+http://idangero.us/swiper/demos/
+http://idangero.us/swiper/api/
+
+Good Demos
+***************************************
+http://idangero.us/swiper/demos/110-slides-per-view.html
+http://idangero.us/swiper/demos/130-centered.html
+http://idangero.us/swiper/demos/160-scroll-container.html
+http://idangero.us/swiper/demos/240-effect-coverflow.html
+http://idangero.us/swiper/demos/260-keyboard-control.html
+http://idangero.us/swiper/demos/270-mousewheel-control.html
+http://idangero.us/swiper/demos/280-autoplay.html
+http://idangero.us/swiper/demos/360-parallax.html
+http://idangero.us/swiper/demos/380-responsive-breakpoints.html
+
+*/
+
+
+/* Slider
+********************/
+.swiper-container { width: 100vw; max-width: 1300px; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: visible; }
+.swiper-wrapper {  }
+.swiper-slide { color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.swiper-slide-active { z-index: 2 !important; }
+.swiper-slide-active .plan-inner { box-shadow: 0 0 32px 0 rgba(0,0,0,.5); }
+
+
+/* previous & next */
+.swiper-button-next,
+.swiper-button-prev { color: white; top: auto; background: rgba(255,255,255,0); font-size: 200px; opacity: .14; transition: .22s ease-in-out; height: auto; width: auto; }
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover { opacity: 1; }
+
+.swiper-button-next { right: calc(-100% + 100px); }
+.swiper-button-prev { left: calc(-100% + 100px); }
+
+/*==============================================                                           
+  ####    #####  ##   ##  ##   ####  #####  
+  ##  ##  ##     ##   ##  ##  ##     ##     
+  ##  ##  #####  ##   ##  ##  ##     #####  
+  ##  ##  ##      ## ##   ##  ##     ##     
+  ####    #####    ###    ##   ####  #####  
+                                              
+==============================================*/
+
+
+
+/* Mobile */
+@media (min-width: 0) and (max-width: 768px) {
+
+  .swiper-button-next, 
+  .swiper-button-prev { display: none; }
+
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+    
+}
+
+/* Desktop */
+@media (min-width: 1025px) { 
+
+
+}

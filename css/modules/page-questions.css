@@ -1,0 +1,85 @@
+
+/* questions
+********************/
+.page-questions { position: relative; background: #fff; color: black; }
+.page-questions * { color: black; }
+
+/* title */
+.page-questions h2 { color: black; background: unset; -webkit-background-clip: unset; -webkit-text-fill-color: unset; }
+
+
+/* questions */
+.questions-container { margin: 2rem auto 0; }
+.questions-container li { text-align: left; position: relative; margin: 2rem 0 0; padding: 0 0 0 10px;  }
+.questions-container li p { font-size: 16px; font-family: 'Roboto Slab'; }
+.questions-container li p.question { color: rgba(0,0,0,.87); font-weight: 900; }
+.questions-container li p.answer { color: rgba(0,0,0,.54); font-weight: 500; }
+
+/* gradients */
+/* .questions-container li:before { background: linear-gradient(to right, var(--yellow) 0%, var(--red) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.questions-container li:after { opacity: 0; background: linear-gradient(to right, var(--blue) 0%, var(--yellow) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.questions-container li:hover:before { opacity: 0; }
+.questions-container li:hover:after { opacity: 1; } */
+
+/* rainbow */
+.questions-container li:before,
+.questions-container li:after { overflow: hidden; border-radius: 100%; font-family: "Material Icons"; display: block; position: absolute; top: -10px; right: 100%; font-size: 64px; width: 64px; height: 64px; transition: .22s ease-in-out; }
+
+.questions-container li:before { content: "\e887"; background: white; color: black; opacity: 1; }
+
+.questions-container li:after {
+  will-change: background background-position background-size;
+  content: "\e887"; color: rgba(0,0,0,0); opacity: 0;
+  overflow-x: hidden;
+  border-radius: inherit;
+  transition: .22s ease-in-out;
+  background: repeating-linear-gradient(to right, var(--blue), var(--green), var(--yellow), var(--red), var(--yellow), var(--green), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+	background-position: 0 0;
+	background-size: 1000% 1000%; 
+  animation: Rainbow 3s linear infinite forwards;
+  animation-play-state: paused; }
+
+.questions-container li:hover:before { background: white; color: rgba(0,0,0,0); }
+.questions-container li:hover:after { opacity: 1; animation-play-state: running; }
+
+@keyframes Rainbow {
+	0% {
+		background-position: 0% 50%;
+	}
+	
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+/*==============================================                                           
+  ####    #####  ##   ##  ##   ####  #####  
+  ##  ##  ##     ##   ##  ##  ##     ##     
+  ##  ##  #####  ##   ##  ##  ##     #####  
+  ##  ##  ##      ## ##   ##  ##     ##     
+  ####    #####    ###    ##   ####  #####  
+                                              
+==============================================*/
+
+
+
+/* Mobile */
+@media (min-width: 0) and (max-width: 768px) {
+
+  .questions-container { width: 70%; transform: translateX(2rem); margin: 0 auto; }
+
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+  .questions-container { width: 75%; }
+    
+}
+
+/* Desktop */
+@media (min-width: 1025px) { 
+
+  .questions-container { width: 50%; }
+
+}

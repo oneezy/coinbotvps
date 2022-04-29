@@ -1,0 +1,113 @@
+
+/* Main Layout
+********************/
+/* Articles */
+article:not(.page-hero) {  }
+
+article h1, 
+article h2,
+article h1 a,
+article h2 a { font-family: 'Roboto Slab'; color: white; font-weight: 900; margin: 0 auto; text-align: center; white-space: nowrap; position: relative; background: linear-gradient(to right, gray, #fff 50%, gray); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+
+.page-hero h1, 
+.page-hero h2,
+.page-hero h1 a,
+.page-hero h2 a { font-size: 5vw; }
+
+
+/* Rainbow Buzz */
+article:not(.page-hero) h1,
+article:not(.page-hero) h2 { font-size: 36px; display: inline-block; }
+
+article:not(.page-hero) h1:before,
+article:not(.page-hero) h1:after,
+article:not(.page-hero) h2:before,
+article:not(.page-hero) h2:after { content: ''; display: inline-block; width: 90px; height: 40px; position: absolute; bottom: 6px; }
+
+/* Rainbow Buzz (left) */
+article:not(.page-hero) h1:before,
+article:not(.page-hero) h2:before { background: url("../../images/bg/rainbow-buzz--left.svg") no-repeat 0 0; right: calc(100% + 4px); }
+
+/* Rainbow Buzz (right) */
+article:not(.page-hero) h1:after,
+article:not(.page-hero) h2:after { background: url("../../images/bg/rainbow-buzz--right.svg") no-repeat 0 0; left: calc(100% + 4px); }
+
+.page:not(.page-hero):not(.page-testimonials) .page-container { grid-gap: 5rem; padding: 5rem 0 0; }
+
+
+
+
+/* Rainbow BG 
+***********************************/
+/* plans */
+.page-plans { margin: 5rem 0 0; }
+.page-plans.rainbow-bg:before { background-color: white; top: 93%; }
+.page-plans.rainbow-bg:after { background-position: 0 93%; }
+
+
+/* features */
+.page-features { margin: 5rem 0 0; }
+
+/* testimonials */
+.page-testimonials .page-container { margin: 5rem 0 0; }
+
+/*==============================================                                           
+  ####    #####  ##   ##  ##   ####  #####  
+  ##  ##  ##     ##   ##  ##  ##     ##     
+  ##  ##  #####  ##   ##  ##  ##     #####  
+  ##  ##  ##      ## ##   ##  ##     ##     
+  ####    #####    ###    ##   ####  #####  
+                                              
+==============================================*/
+
+/* Universal */
+.wrapper { z-index: 1; margin: 0 auto; }
+
+
+/* Mobile */
+@media (min-width: 0) and (max-width: 768px) {
+
+    .page-hero h1, 
+    .page-hero h2,
+    .page-hero h1 a,
+    .page-hero h2 a { font-size: 8vw; }
+
+    /* Rainbow Buzz */
+    article:not(.page-hero) h1,
+    article:not(.page-hero) h2 { transform: scale(1); }
+
+    .page:not(.page-hero):not(.page-testimonials) .page-container { grid-gap: 3rem; }
+
+    /* Rainbow BG 
+    ***********************************/
+    /* plans */
+    .page-plans.rainbow-bg:before { background-color: white; top: 74%; }
+    .page-plans.rainbow-bg:after { background-position: 0 74%; }
+
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+    .wrapper { width: 95%; }
+    .page-hero h1, 
+    .page-hero h2,
+    .page-hero h1 a,
+    .page-hero h2 a { font-size: 7vw; }
+
+    /* Rainbow Buzz */
+    article:not(.page-hero) h1,
+    article:not(.page-hero) h2 { transform: scale(1.75); }
+    
+}
+
+/* Desktop */
+@media (min-width: 1025px) { 
+
+    .wrapper { min-width: 900px; max-width: 1300px; }
+
+    /* Rainbow Buzz */
+    article:not(.page-hero) h1,
+    article:not(.page-hero) h2 { transform: scale(2); }
+}

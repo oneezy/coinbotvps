@@ -1,0 +1,87 @@
+
+
+
+/* Hero 
+********************/
+/* bg */
+.page-hero { background: url("../../images/bg/bg.png"); background-size: cover; background-position: center; }
+
+
+/* .page-hero .button-container.btn-demo:before { 
+  content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,.14); background: linear-gradient(to right, rgba(255,255,255, .54), rgba(0,0,0, .14), rgba(255,255,255, .14)); border-radius: inherit;
+} */
+
+.page-hero .mdc-button { width: 100%; background: rgba(255,255,255,.14); color: white; font-size: 24px; padding: .5rem 1rem; height: auto; border-radius: 7px; }
+.page-hero .mdc-button i { width: 48px; font-size: 48px; }
+.page-hero .mdc-button img { width: 48px; height: 48px; }
+.page-hero .mdc-button img,
+.page-hero .mdc-button span { padding: .25rem; }
+
+/* Plans Button */
+.page-hero .button-container.btn-demo .mdc-button    { color: black; background: rgba(255,255,255, 0); }
+.page-hero .button-container.btn-demo .mdc-button img {  }
+
+/* Support Button */
+.page-hero .button-container.btn-support .mdc-button { background: rgba(0,0,0,1); color: white; }
+.page-hero .button-container.btn-support .mdc-button img { filter: invert(1); }
+
+
+/* scroll down arrow */
+.scrolldown-arrow { position: absolute; top: calc(100% - 84px); left: 0; right: 0; }
+.scrolldown-arrow i { color: white; font-size: 84px; }
+
+/* trading bots */
+.trading-bots { display: flex; flex-direction: horizontal; align-items: center; justify-content: space-between; transition: .22s ease-in-out; }
+.trading-bots a { filter: invert(1); opacity: .14; transition: .22s ease-in-out; }
+.trading-bots a:hover { opacity: .24; }
+
+
+
+
+/*==============================================                                           
+  ####    #####  ##   ##  ##   ####  #####  
+  ##  ##  ##     ##   ##  ##  ##     ##     
+  ##  ##  #####  ##   ##  ##  ##     #####  
+  ##  ##  ##      ## ##   ##  ##     ##     
+  ####    #####    ###    ##   ####  #####  
+                                              
+==============================================*/
+
+
+
+/* Mobile */
+@media (min-width: 0) and (max-width: 768px) {
+
+  /* buttons */
+  .page-hero .button-container { width: auto;  }
+  .page-hero .button-container .mdc-button { width: 100%; font-size: 20px; padding: .5rem 1rem; }
+  .page-hero .button-container .mdc-button i { width: 32px; font-size: 32px; }
+
+  /* trading bots */
+  .trading-bots a { pointer-events: none; }
+
+  /* scrolldown arrow */
+  .scrolldown-arrow { top: calc(100% - 124px); }
+  .scrolldown-arrow i { color: white; font-size: 64px; }
+  
+  /* buttons */
+  .page-hero .button-container { margin: 0 2px; }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+  /* trading bots */
+  .trading-bots { transform: scale(.8); }
+  .trading-bots a { margin: 0 1rem; max-width: 100%; }
+    
+}
+
+/* Desktop */
+@media (min-width: 1025px) { 
+
+  /* trading bots */
+  .trading-bots { margin: 4rem 0 0; }
+  .trading-bots a { margin: 0 1rem; }
+  
+}

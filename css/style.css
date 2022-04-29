@@ -1,0 +1,33 @@
+/*
+Theme Name: CoinBotVPS
+Author: Justin O'Neill
+Version: 1.0
+*/
+
+/* 3rd party */
+/* @import "slick-carousel/slick/slick.css"; */
+
+/* Base
+*********************************/
+@import "base/theme.css";
+@import "base/reset.css";
+@import "base/layout.css";
+@import "base/fixes.css";
+@import "base/utility.css";
+
+
+/* Modules
+*********************************/
+@import "modules/component-header.css";
+@import "modules/component-header-drawer.css";
+@import "modules/component-main.css";
+@import "modules/component-signup.css";
+@import "modules/component-footer.css";
+@import "modules/component-button.css";
+@import "modules/component-slider.css";
+@import "modules/component-bg.css";
+@import "modules/page-hero.css";
+@import "modules/page-plans.css";
+@import "modules/page-features.css";
+@import "modules/page-testimonials.css";
+@import "modules/page-questions.css";

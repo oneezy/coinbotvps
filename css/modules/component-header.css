@@ -1,0 +1,55 @@
+
+/* Header 
+********************/
+/* Top app bar */
+.mdc-top-app-bar { background: rgba(0,0,0,.87); }
+.logo img { width: 240px; padding: 0 0 0 20px; }
+
+/* Tabs */
+.mdc-tab-bar { display: flex; align-items: center; }
+.mdc-tab { min-width: auto; color: rgba(255,255,255,0.54); padding: 0 4px; margin: 0 8px; letter-spacing: 0; line-height: auto; min-height: auto; }
+.mdc-tab.mdc-tab--active { color: rgba(255,255,255,1); }
+.mdc-tab-bar__indicator { 
+  background: white;
+  height: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(to right, var(--blue) 5%, var(--green), var(--yellow), var(--red) 95%, rgba(0,0,0,0) ) 30;
+}
+
+/* Sign In (see more) */
+.signin-container { padding: 0 20px 0 0; }
+.link-signin { color: var(--mdc-theme-primary); padding: 0 1.75rem; }
+.link-signin i { position: absolute; right: 0; top: 6px; color: white; }
+.link-signin:hover { color: var(--mdc-theme-primary-light); }
+
+
+
+/*==============================================                                           
+  ####    #####  ##   ##  ##   ####  #####  
+  ##  ##  ##     ##   ##  ##  ##     ##     
+  ##  ##  #####  ##   ##  ##  ##     #####  
+  ##  ##  ##      ## ##   ##  ##     ##     
+  ####    #####    ###    ##   ####  #####  
+                                              
+==============================================*/
+
+
+
+/* Mobile */
+@media (min-width: 0) and (max-width: 768px) {
+
+  .logo img { width: 200px; }
+
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+  
+}
+
+/* Desktop */
+@media (min-width: 1025px) { 
+
+}

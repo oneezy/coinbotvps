@@ -1,0 +1,99 @@
+
+/* Footer 
+********************/
+footer { padding: 2rem; position: relative; }
+
+/* logo container */
+footer .logo-container { position: relative; height: 100%; padding: 2rem; margin: 1rem; }
+
+/* map */
+footer .logo-container:after { content: ''; display: block; background: url('../../images/bg/map.svg') no-repeat center; background-size: contain; filter: invert(1); position: absolute; top: 0; right: 0; bottom: 0; left: 0; opacity: .24; width: 100%; height: 100%; padding: 0; z-index: -1; }
+
+/* logo  */
+footer .logo-container .logo img { width: 160px; padding: 0; }
+
+/* social */
+footer .social { white-space: nowrap; margin: .5rem 0 0; }
+footer .social a { opacity: .5; background: rgba(0,0,0,1); border: 1.25px solid rgba(255,255,255,1); display: inline-block; margin: 0 2px; padding: 5px; width: 32px; height: 32px; white-space: nowrap; border-radius: 100%; }
+footer .social a img { filter: invert(1); display: block; margin: 0; width: 100%; white-space: nowrap; }
+
+/* social rainbow hover */
+footer .social a:hover {
+  opacity: 1;
+  border: 1.25px solid rgba(255,255,255,0);
+  background: repeating-linear-gradient(to right, var(--blue), var(--green), var(--yellow), var(--red), var(--yellow), var(--green), var(--blue)); 
+  background-position: 0 0;
+  background-size: 1000% 1000%; 
+  animation: Rainbow 3s linear infinite forwards;
+}
+
+footer .social a:hover img { filter: invert(0); }
+
+/* links */
+footer nav { display: flex; align-content: center; justify-content: space-between; }
+footer nav a { display: block; text-transform: unset; font-weight: 300; color: white; opacity: 1; transition: .22s ease-in-out; position: relative; margin: 0 0 3px 18px; }
+
+/* link icons */
+footer nav a:before,
+footer nav a:after  { font-family: 'Material Icons'; content: '\e315'; display: block; position: absolute; right: 100%; top: 1px; padding: 0 6px 0 0; }
+
+footer nav a:before { color: white; opacity: .5; }
+footer nav a:after  { color: white; opacity: 0; }
+
+footer nav section:nth-child(1) a:after  { color: var(--blue); }
+footer nav section:nth-child(2) a:after { color: var(--green); }
+footer nav section:nth-child(3) a:after  { color: var(--yellow); }
+footer nav section:nth-child(4) a:after   { color: var(--red); }
+
+/* link hover fx */
+footer nav a:hover { opacity: 1; }
+footer nav a:hover:before  { opacity: 0; }
+footer nav a:hover:after  { opacity: 1; }
+
+/* navigation titles */
+footer nav section                  { margin: 1rem 0; }
+footer nav section h4               { color: var(--mdc-theme-primary); text-transform: uppercase; font-weight: 400; margin: 0 0 .5rem; }
+footer nav section:nth-child(1) h4  { color: var(--blue); }
+footer nav section:nth-child(2) h4  { color: var(--green); }
+footer nav section:nth-child(3) h4  { color: var(--yellow); }
+footer nav section:nth-child(4) h4  { color: var(--red); }
+
+
+/* highlights */
+footer .footer-highlights .affiliate-logo { filter: invert(1); }
+footer .footer-highlights .affiliate-logo .security-logo { width: 50px; }
+footer .footer-highlights .affiliate-logo .server-logo { width: 100px; }
+footer .footer-highlights p { color: white; opacity: .5; text-align: left; font-weight: 300; line-height: 1.4; margin: 1rem; }
+
+
+/*==============================================                                           
+  ####    #####  ##   ##  ##   ####  #####  
+  ##  ##  ##     ##   ##  ##  ##     ##     
+  ##  ##  #####  ##   ##  ##  ##     #####  
+  ##  ##  ##      ## ##   ##  ##     ##     
+  ####    #####    ###    ##   ####  #####  
+                                              
+==============================================*/
+
+
+
+/* Mobile */
+@media (min-width: 0) and (max-width: 768px) {
+
+  footer .footer-highlights section { margin: 1rem 0; }
+  footer .footer-highlights p { margin: 1rem 0 0; }
+  footer .logo-container { min-height: 150px; margin: 0; padding: 0; }
+
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+    
+}
+
+/* Desktop */
+@media (min-width: 1025px) { 
+
+  
+}

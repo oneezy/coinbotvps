@@ -1,0 +1,33 @@
+
+
+body { overflow: hidden; min-height: 100vh; height: 100%; width: 100%; }
+header { z-index: 1; }
+main { min-height: 100vh; height: 100%; position: relative; z-index: 0; }
+article { position: relative; min-height: 100vh; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+article > section { display: grid; grid-gap: 2rem; align-items: center; }
+meta[name=theme-color] { transition: .22s ease-in-out; }
+/* article > section { display: flex; flex-direction: column; align-items: center; } */
+
+/* grid experiment */
+/* article { display: grid; grid-gap: 1rem; align-items: center; justify-content: center; } */
+
+/* flex experiment */
+/* article { display: flex; flex-direction: column; align-items: center; justify-content: center; } */
+
+
+
+
+
+
+
+
+.page { position: relative; min-height: 100vh; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.page:not(.page-hero) { min-height: auto; }
+
+
+/* 
+.grid-row { display: grid; grid-auto-rows: minmax(100px, auto); }
+.grid-col { display: grid; grid-auto-columns: minmax(100px, auto); }
+.center-center { align-items: center; justify-content: center; }
+.text-center { text-align: center; } */

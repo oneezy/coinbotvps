@@ -1,0 +1,37 @@
+
+/* Signup 
+********************/
+.section-signup { color: white; padding: 0 0 7px; }
+.section-signup .page-container { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; display: none;  }
+.section-signup .page-container strong { font-family: 'Roboto Slab'; font-size: 4vw; color: white; font-weight: 900; text-shadow: -1.25px -1.25px 0 rgba(0, 0, 0,.24); }
+.section-signup .page-container .mdc-button { border-radius: 50px; font-size: 24px; min-height: auto; height: auto; padding: 1rem 3rem; background: black; color: white; border: 3px solid rgba(255,255,255,1); }
+
+
+/*==============================================                                           
+  ####    #####  ##   ##  ##   ####  #####  
+  ##  ##  ##     ##   ##  ##  ##     ##     
+  ##  ##  #####  ##   ##  ##  ##     #####  
+  ##  ##  ##      ## ##   ##  ##     ##     
+  ####    #####    ###    ##   ####  #####  
+                                              
+==============================================*/
+
+
+
+/* Mobile */
+@media (min-width: 0) and (max-width: 768px) {
+
+
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+    
+}
+
+/* Desktop */
+@media (min-width: 1025px) { 
+
+  
+}

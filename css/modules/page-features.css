@@ -1,0 +1,45 @@
+
+/* Features
+********************/
+.page-features { position: relative; background: #fff; color: black; }
+.page-features * { color: black; }
+
+/* title */
+.page-features h2 { color: black; background: unset; -webkit-background-clip: unset; -webkit-text-fill-color: unset; }
+
+/* features */
+.feature-container { display: grid; grid-gap: 3rem; grid-template-columns: repeat(auto-fill,minmax(200px, 1fr)); margin: 2rem 0 0; }
+.feature-container .feature { text-align: center; }
+.feature-container .feature img { width: 30%; }
+.feature-container .feature h3 { font-family: 'Roboto Slab'; font-weight: 900; font-size: 24px; }
+.feature-container .feature p { text-align: center; opacity: .87; }
+
+
+/*==============================================                                           
+  ####    #####  ##   ##  ##   ####  #####  
+  ##  ##  ##     ##   ##  ##  ##     ##     
+  ##  ##  #####  ##   ##  ##  ##     #####  
+  ##  ##  ##      ## ##   ##  ##     ##     
+  ####    #####    ###    ##   ####  #####  
+                                              
+==============================================*/
+
+
+
+/* Mobile */
+@media (min-width: 0) and (max-width: 768px) {
+
+
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+    
+}
+
+/* Desktop */
+@media (min-width: 1025px) { 
+
+
+}
